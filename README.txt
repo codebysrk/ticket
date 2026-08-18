@@ -1,18 +1,16 @@
-# Booking Details PWA
+BOOKING DETAILS PWA
 
-Files:
+Required files:
 - index.html
 - manifest.webmanifest
 - sw.js
 - icons/icon-192.png
 - icons/icon-512.png
 
-## Install
-A PWA must be served from HTTPS or localhost. Opening index.html directly with file:// will not enable service-worker installation.
+IMPORTANT:
+The service worker works only from HTTPS or localhost.
+Opening index.html directly as file:// will NOT register the service worker.
 
-For local testing:
-1. Put this folder on a web server, or run a local server.
-2. Open the site in Chrome.
-3. Use Chrome menu -> Add to Home screen / Install app.
-
-The app is configured for standalone portrait mode and offline caching.
+Deploy this folder to Netlify, Vercel, GitHub Pages, or another HTTPS host.
+Then open the HTTPS URL in Chrome and choose:
+Menu -> Install app / Add to Home screen.
