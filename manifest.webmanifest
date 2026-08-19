@@ -1,7 +1,7 @@
 {
-  "name": "Booking Details",
-  "short_name": "Booking",
-  "description": "Booking Details progressive web application",
+  "name": "RailOne",
+  "short_name": "RailOne",
+  "description": "RailOne - A indian Railway ticket booking app.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
