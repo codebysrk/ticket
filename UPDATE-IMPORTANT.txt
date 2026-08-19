@@ -1,0 +1,18 @@
+Automatic update behavior is enabled.
+
+The installed PWA:
+1. Checks for a newer service worker when it opens.
+2. Uses network-first for index.html.
+3. Automatically activates a new service worker.
+4. Reloads once when the new worker takes control.
+
+IMPORTANT FOR HOSTING:
+Serve sw.js with Cache-Control: no-cache, no-store, or must-revalidate.
+Serve index.html with Cache-Control: no-cache or a short max-age.
+
+For Netlify, add a _headers file with:
+/sw.js
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/index.html
+  Cache-Control: no-cache, must-revalidate
